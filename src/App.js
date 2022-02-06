@@ -60,15 +60,12 @@ const sendData = (e) => {
       </form>
 
 
-      <div>
+      <div className='app_recipes'>
        
         {recipes.map(recipe => {
-
-            
+ 
             return <RecipeTile recipe={recipe}/>
               
-            
-
         })}
 
       </div>
