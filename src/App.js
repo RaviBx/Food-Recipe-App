@@ -1,11 +1,24 @@
 import './App.css';
 import './key';
+import React, { Component } from 'react';
 
 function App() {
 
 
   var url = `https://api.edamam.com/search?q=chicken&
-  app_id=2faec28c&app_key=726c2a74df0895a29f0571a1e988afab&from=0&to=3&calories=591-722&health=alcohol-free`;
+  app_id=${YOUR_APP_ID}&app_key=${YOUR_APP_KEY}&from=0&to=3&calories=591-722&health=alcohol-free`;
+
+
+function getRecipes(){
+
+  
+var result = await
+
+
+
+}
+
+
 
   return (
     <div className="App">
