@@ -12,12 +12,14 @@ function App() {
 
   const [recipes, setrecipes] = useState([]);
 
+  const [healthLabel, sethealthLabel] = useState("vegan");
+
   const YOUR_APP_ID = "2faec28c";
 
   const YOUR_APP_KEY = "726c2a74df0895a29f0571a1e988afab";
 
   var url = `https://api.edamam.com/search?q=${query}&
-  app_id=${YOUR_APP_ID}&app_key=${YOUR_APP_KEY}&&health=alcohol-free`;
+  app_id=${YOUR_APP_ID}&app_key=${YOUR_APP_KEY}&&health=${ healthLabel}`;
 
 
 
@@ -56,6 +58,12 @@ const sendData = (e) => {
 
 
         <input type="submit" className='app_submit' value="Search" />
+
+        <select className="app_healthLables">
+          <option>
+
+          </option>
+        </select>
 
       </form>
 
