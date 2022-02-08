@@ -59,15 +59,27 @@ const sendData = (e) => {
 
         <input type="submit" className='app_submit' value="Search" />
 
-        <select className="app_healthLables">
-          <option>
 
-          </option>
-        </select>
+
+         {/*Drop down menu start*/}
+
+            <select className="app_healthLables">
+              <option onClick={() => {
+
+
+
+
+
+              }}>
+
+              </option>
+            </select>
+
+        {/*Drop down menu end*/}
 
       </form>
 
-
+  
       <div className='app_recipes'>
        
         {recipes.map(recipe => {
