@@ -64,18 +64,30 @@ const sendData = (e) => {
          {/*Drop down menu start*/}
 
             <select className="app_healthLables">
-              <option onClick={() => {
 
-
-
-
-
-              }}>
-
+              <option onClick={() => sethealthLabel("vegan") }> 
+              vegan
               </option>
+
+              <option onClick={() => sethealthLabel("vegetarian") }> 
+              vegetarian
+              </option>
+            
+              <option onClick={() => sethealthLabel("paleo") }> 
+              paleo
+              </option>
+
+              <option onClick={() => sethealthLabel("dairy-free") }> 
+              dairy-free
+              </option>
+
+              <option onClick={() => sethealthLabel("low sugar") }> 
+              low sugar
+              </option>
+
             </select>
 
-        {/*Drop down menu end*/}
+         {/*Drop down menu end*/}
 
       </form>
 
