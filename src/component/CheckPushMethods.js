@@ -70,7 +70,7 @@ const sendData = (e) => {
               </option>
 
               <option onClick={() => sethealthLabel("vegetarian") }>
-              vegetarian
+              vege
               </option>
 
               <option onClick={() => sethealthLabel("paleo") }>
